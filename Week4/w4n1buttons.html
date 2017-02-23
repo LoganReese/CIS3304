@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: white;
+			font-size: 20px;
+			font-family: Arial;
+        }
+    </style>
+    <script>
+        function backgroundRed() {
+            var x = document.getElementById('pagec');
+            x.style.backgroundColor = 'Red';
+            x.style.color = 'blue';
+            x.style.fontSize = '14px';
+        }
+        function backgroundGreen() {
+            var x = document.getElementById('pagec');
+            x.style.backgroundColor = 'Green';
+            x.style.color = 'grey';
+            x.style.fontSize = '50px';
+        }
+        function backgroundBlue() {
+            var x = document.getElementById('pagec');
+            x.style.backgroundColor = 'Blue';
+            x.style.color = 'yellow';
+            x.style.fontSize = '37px';
+        }
+    </script>
+</head>
+
+<body id="pagec">
+    <button onclick="backgroundRed()">Red</button>
+    <button onclick="backgroundGreen()">Green</button>
+    <button onclick="backgroundBlue()">Blue</button>
+    <h1>Logan's Awesome Page</h1>
+
+</body>
+
+</html>

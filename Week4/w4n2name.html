@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+        #hello {
+            font-weight: bold;
+			font-size: 40px;
+			font-family: "Comic Sans MS";
+        }
+    </style>
+    <script>
+        function greetings() {
+            document.getElementById('hello').innerHTML
+                = "Nice to meet you " + document.getElementById('username').value + "!";
+        }
+    </script>
+</head>
+
+<body>
+    <input id="username" type="text" name="name" placeholder="Enter Name Please!">
+    <button onclick="greetings()">Get Greeting</button>
+    <p id="hello"></p>
+</body>
+
+</html>

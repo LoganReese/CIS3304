@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var answer = Math.floor(Math.random() * 10) + 1;
+        var count = 1;
+        function personsEntry() {
+            var guess = parseInt(document.getElementById('entry').value);
+            if(guess===answer){
+            document.getElementById('right').innerHTML = "You did it in " + count + " tries";
+			}
+             else if (guess < answer) {
+            document.getElementById('right').innerHTML = "Too Low, try again!";
+			}
+             else {
+            document.getElementById('right').innerHTML = "Too High, try again!";
+			}
+            
+            count++;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Logan's Guessing Game</h1>
+    <p>Enter a number between 1 and 10</p>
+    <input id="entry" type="text" name="guesstn" placeholder="Enter your guess!">
+    <button onclick="personsEntry()">Guess</button>
+    <p id="right"></p>
+</body>
+
+</html>

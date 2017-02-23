@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+		var value1 = (parseInt(document.getElementById('firsttextbox').value));
+		var value2 = (parseInt(document.getElementById('secondtextbox').value));
+        function Multiplication() {
+			 document.getElementById('result').innerHTML = (parseInt(document.getElementById('firsttextbox').value) 
+			 * parseInt(document.getElementById('secondtextbox').value)).toString();
+        }
+		function Division() {
+			 document.getElementById('result').innerHTML = (parseInt(document.getElementById('firsttextbox').value) 
+			 / parseInt(document.getElementById('secondtextbox').value)).toString();
+			 
+        }
+		function Addition() {
+			 document.getElementById('result').innerHTML = (parseInt(document.getElementById('firsttextbox').value) 
+			 + parseInt(document.getElementById('secondtextbox').value)).toString();
+        }
+		function Subtraction() {
+			 document.getElementById('result').innerHTML = (parseInt(document.getElementById('firsttextbox').value) 
+			 - parseInt(document.getElementById('secondtextbox').value)).toString();
+        }
+		
+
+    </script>
+</head>
+
+<body>
+    <h1>Logan's Calculator</h1>
+    <p>Enter two numbers and choose a function to use.</p>
+    <input id="firsttextbox" type="text" name="values" placeholder="First number here!">
+	<input id="secondtextbox" type="text" name="values" placeholder="Second number here!">
+	<p>=</p>
+	<p id ="result"></p>
+	</br>
+    <button onclick="Addition()">+</button>
+	<button onclick="Subtraction()">-</button>
+	<button onclick="Multiplication()">*</button>
+	<button onclick="Division()">/</button>
+
+	</br>
+
+	
+</body>
+
+</html>
